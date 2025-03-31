@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./counterSlice.jsx";
+import newsReducer from "./newsSlice.jsx";
 const appStore = configureStore({
 
   reducer:{
-    news: counterReducer,
+    news: newsReducer,
 
   },
 });

@@ -2,14 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 export const counterSlice = createSlice({
   name:"counter",
   initialState:{
-    addnews : null,
+    setNewsOne : null,
   },
-  reducer:{
-    newsOne: (state, action) =>{
-      addnews.state = action.payload
+  reducers:{
+    addNewsOne: (state, action) =>{
+      state.setNewsOne = action.payload
     },
   },
 })
-export const {newsOne} = counterSlice.actions;
+export const {addNewsOne} = counterSlice.actions;
 export default counterSlice.reducer
 
